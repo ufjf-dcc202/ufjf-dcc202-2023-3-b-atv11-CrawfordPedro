@@ -3,3 +3,9 @@ const lista = [
     "Dois",
     "Três"
 ]
+
+function getLista(){
+
+}
+
+export {getLista}
