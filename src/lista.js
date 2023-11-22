@@ -17,7 +17,7 @@ function removeDaLista() {
 }
 
 function limpaLista() {
-    
+
 }
 
-export {getLista}
+export {getLista, adicionaNaLista, removeDaLista, limpaLista}
