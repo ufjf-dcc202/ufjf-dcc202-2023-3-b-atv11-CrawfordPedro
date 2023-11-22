@@ -1,5 +1,5 @@
 import { getLista } from "../src/lista.js"
-import { adicionaNaLista } from "./src/lista.js";
+import { adicionaNaLista, limpaLista } from "./src/lista.js";
 
 const pEntrada = document.querySelector("#entrada");
 const btnAdicionar = document.querySelector("#adicionar");
@@ -7,8 +7,14 @@ const btnLimpar = document.querySelector("#limpar");
 const olItens = document.querySelector("#itens");
 
 atualizarListaOrdenada();
-btnAdicionar.addEventListener('click', adicionaItemDaEntrada);
 
+btnAdicionar.addEventListener('click', adicionaItemDaEntrada);
+btnLimpar.addEventListener('click', limparLista);
+
+function limparLista() {
+    limpaLista();
+    atualizarListaOrdenada();
+}
 
 function adicionaItemDaEntrada() {
     const valor = pEntrada.textContent;
